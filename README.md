@@ -12,7 +12,7 @@ sudo apt-get install -y nodejs
 sudo npm install -g yarn
 
 # Install Quasar CLI
-yarn global add @quasar/cli
+npm install -g @quasar/cli
 ```
 
 ## Install the dependencies

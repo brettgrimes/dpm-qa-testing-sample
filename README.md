@@ -1,8 +1,6 @@
 # QA Testing Sample (dpm-qa-testing-sample)
 
-A Quasar Framework app
-
-## Install required tools
+## Set up environment
 ```bash
 # Install Node.js LTS
 curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
@@ -13,29 +11,12 @@ sudo npm install -g yarn
 
 # Install Quasar CLI
 npm install -g @quasar/cli
-```
 
-## Install the dependencies
-```bash
+# Install dependencies using YARN
 yarn
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
-quasar dev
-```
-
-### Lint the files
-```bash
-yarn run lint
-```
-
-### Build the app for production
-```bash
-quasar build
-```
-
-### Run the E2E Cypress tests
+## Run the E2E Cypress tests
 ### In the interactive testrunner
 ```bash
 quasar test --e2e cypress-open
@@ -44,6 +25,3 @@ quasar test --e2e cypress-open
 ```bash
 quasar test --e2e cypress-run
 ```
-
-### Customize the configuration
-See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).

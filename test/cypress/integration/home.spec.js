@@ -1,8 +1,6 @@
 describe('Parking Cost Calculator', () => {
-  before(() => {
-    cy.visit('/').then(() => {
-      cy.url().should('include', 'www.shino.de/parkcalc')
-    });
+  before(async () => {
+    await cy.visit('/');
   });
   it('has the correct title', () => {
     cy.get('.PageTitle').eq(0).should('have.text', 'PARKING COST CALCULATOR');
@@ -17,4 +15,3 @@ describe('Parking Cost Calculator', () => {
     cy.get('#ParkingLot').find('option').eq(2).should('have.selected', true);
   });
 });
-

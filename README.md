@@ -2,6 +2,16 @@
 
 A Quasar Framework app
 
+## Install required tools
+```bash
+# Install Node.js LTS
+curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+# Install YARN
+sudo npm install -g yarn
+```
+
 ## Install the dependencies
 ```bash
 yarn
